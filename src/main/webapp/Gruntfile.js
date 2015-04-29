@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 	var blog = {
 		app : require('./bower.json').appPath || 'app',
 		path : '',
-		dist : 'webapp',
+		dist : '../myapp',
 		bundle : 'bundle'
 	};
 	grunt.initConfig({
@@ -88,7 +88,11 @@ module.exports = function(grunt) {
 					dest : blog.dist
 				}, {
 					expand : true,
-					src : [ blog.path + 'WEB-INF/web.xml' ],
+					src : [ blog.path + 'WEB-INF/**' ],
+					dest : blog.dist
+				}, {
+					expand : true,
+					src : [ blog.path + 'META-INF/**' ],
 					dest : blog.dist
 				}, {
 					expand : true,

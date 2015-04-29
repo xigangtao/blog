@@ -1,1 +1,86 @@
-body,html{margin:0;padding:0;height:100%;background-color:#f2f2f2}.main-view{height:100%;padding-top:10px}.main-view .sidebar{height:100%;padding:10px 0}.main-view .content{padding:10px}.error-form .ng-invalid{border-color:red}.error-form .ng-valid{border-color:none}.error-message{padding-top:6px;color:red}.serviceApi-page .animate-part .fade.ng-enter{transition:.5s linear all;opacity:0}.serviceApi-page .animate-part .fade.ng-enter.ng-enter-active{opacity:1}.serviceApi-page .animate-part .active-red{color:red}.serviceApi-page .search-field input{width:100px}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.main-view {
+  height: 100%;
+  padding-top: 10px;
+}
+.main-view .sidebar {
+  height: 100%;
+  padding: 10px 0;
+}
+.main-view .content {
+  padding: 10px;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.main-view {
+  height: 100%;
+  padding-top: 10px;
+}
+.main-view .sidebar {
+  height: 100%;
+  padding: 10px 0;
+}
+.main-view .content {
+  padding: 10px;
+}
+.serviceApi-page .animate-part .fade.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.serviceApi-page .animate-part .fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.serviceApi-page .animate-part .active-red {
+  color: red;
+}
+.serviceApi-page .search-field input {
+  width: 100px;
+}
+.error-form .ng-invalid {
+  border-color: red;
+}
+.error-form .ng-valid {
+  border-color: none;
+}
+.error-message {
+  padding-top: 6px;
+  color: red;
+}
+
+.error-form .ng-invalid {
+  border-color: red;
+}
+.error-form .ng-valid {
+  border-color: none;
+}
+.error-message {
+  padding-top: 6px;
+  color: red;
+}
+
+.serviceApi-page .animate-part .fade.ng-enter {
+  transition: 0.5s linear all;
+  opacity: 0;
+}
+.serviceApi-page .animate-part .fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+.serviceApi-page .animate-part .active-red {
+  color: red;
+}
+.serviceApi-page .search-field input {
+  width: 100px;
+}
