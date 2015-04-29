@@ -195,7 +195,7 @@ module.exports = function(grunt) {
 		}
 	});
 	grunt.registerTask('serve', [ 'connect:server', 'watch' ]);
-	grunt.registerTask('default', [ 'watch' ]);
+	grunt.registerTask('default', [ 'less' ]);
 	grunt.registerTask('build', [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ]);
 	grunt.registerTask('test', [ 'karma' ]);
 };
