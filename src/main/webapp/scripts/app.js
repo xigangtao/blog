@@ -1,2 +1,2 @@
-angular.module('blogApp', ['ui.router','ngAnimate','ui.bootstrap','ngCookies','ngMessages']);
+var app = angular.module('blogApp', ['ui.router','ngAnimate','ui.bootstrap','ngCookies','ngMessages']);
         

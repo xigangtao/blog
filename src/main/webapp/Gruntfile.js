@@ -166,19 +166,32 @@ module.exports = function(grunt) {
 				// Which files to watch (all .less files recursively in the less
 				// directory)
 				files : [ 
-				        blog.path + '*.html', 
-				        blog.path + 'views/*.html',
-						blog.path + 'styles/less/*.less', 
-						blog.path + 'scripts/*.js',
-						blog.path + 'scripts/controllers/*.js' 
+						blog.path + 'styles/less/*.less'
 				],
-				tasks : [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ],
+				tasks : [ 'less'],
 				options : {
 					forceWatchMethod : 'old',
 					debounceDelay : 10,
 					livereload : true
 				}
 			}
+//			styles : {
+//				// Which files to watch (all .less files recursively in the less
+//				// directory)
+//				files : [ 
+//				        blog.path + '*.html', 
+//				        blog.path + 'views/*.html',
+//						blog.path + 'styles/less/*.less', 
+//						blog.path + 'scripts/*.js',
+//						blog.path + 'scripts/controllers/*.js' 
+//				],
+//				tasks : [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ],
+//				options : {
+//					forceWatchMethod : 'old',
+//					debounceDelay : 10,
+//					livereload : true
+//				}
+//			}
 //		,
 //			livereload : {
 //				options : {
@@ -195,7 +208,7 @@ module.exports = function(grunt) {
 		}
 	});
 	grunt.registerTask('serve', [ 'connect:server', 'watch' ]);
-	grunt.registerTask('default', [ 'less' ]);
+	grunt.registerTask('default', [ 'watch' ]);
 	grunt.registerTask('build', [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ]);
 	grunt.registerTask('test', [ 'karma' ]);
 };
