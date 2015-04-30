@@ -3,18 +3,44 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  background-color: #fff;
+  background-color: #cdeeff;
 }
 html .main-view,
 body .main-view {
   height: 100%;
-  background-color: #cdeeff;
-  border-left: 2px solid blue;
-  border-right: 2px solid blue;
 }
 
-.header-page .my-card-title {
-  background-color: blue;
+
+.home-page {
+  position: relative;
+  height: 1000px;
+}
+.home-page .home-content {
+  position: relative;
+  margin: 0px 15px;
+  background-color: #e6f7ff;
+  border: 2px solid #c8e8f9;
+  height: 800px;
+}
+.home-page .home-content ul li span {
+  position: absolute;
+  display: inline-block;
+  background: url('../images/2000.jpg') no-repeat;
+  background-position: 0px -36px;
+  width: 68px;
+  height: 70px;
+  top: 10;
+  left: -12px;
+}
+.home-page .home-content .main_round {
+  position: absolute;
+  display: inline-block;
+  background: url('../images/2000.jpg') no-repeat;
+  background-position: 0 -108px;
+  width: 82px;
+  height: 82px;
+  top: -2px;
+  right: -2px;
 }
 
 html,
@@ -22,15 +48,40 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  background-color: #fff;
+  background-color: #cdeeff;
 }
 html .main-view,
 body .main-view {
   height: 100%;
-  background-color: #cdeeff;
-  border-left: 2px solid blue;
-  border-right: 2px solid blue;
 }
-.header-page .my-card-title {
-  background-color: blue;
+.home-page {
+  position: relative;
+  height: 1000px;
+}
+.home-page .home-content {
+  position: relative;
+  margin: 0px 15px;
+  background-color: #e6f7ff;
+  border: 2px solid #c8e8f9;
+  height: 800px;
+}
+.home-page .home-content ul li span {
+  position: absolute;
+  display: inline-block;
+  background: url('../images/2000.jpg') no-repeat;
+  background-position: 0px -36px;
+  width: 68px;
+  height: 70px;
+  top: 10;
+  left: -12px;
+}
+.home-page .home-content .main_round {
+  position: absolute;
+  display: inline-block;
+  background: url('../images/2000.jpg') no-repeat;
+  background-position: 0 -108px;
+  width: 82px;
+  height: 82px;
+  top: -2px;
+  right: -2px;
 }
