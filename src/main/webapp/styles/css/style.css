@@ -10,6 +10,12 @@ body .main-view {
   height: 100%;
 }
 
+.header-page {
+  background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
 
 .home-page {
   position: relative;
@@ -53,6 +59,12 @@ body {
 html .main-view,
 body .main-view {
   height: 100%;
+}
+.header-page {
+  background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
+  background-size: cover;
+  height: 300px;
+  width: 100%;
 }
 .home-page {
   position: relative;
