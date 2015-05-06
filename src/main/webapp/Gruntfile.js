@@ -210,5 +210,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('serve', [ 'connect:server', 'watch' ]);
 	grunt.registerTask('default', [ 'watch' ]);
 	grunt.registerTask('build', [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ]);
+	grunt.registerTask('link', [ 'wiredep']);
 	grunt.registerTask('test', [ 'karma' ]);
 };

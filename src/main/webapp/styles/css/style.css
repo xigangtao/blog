@@ -3,7 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  background-color: #cdeeff;
+  width: 100%;
 }
 html .main-view,
 body .main-view {
@@ -11,10 +11,17 @@ body .main-view {
 }
 
 .header-page {
-  background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
-  background-size: cover;
-  height: 300px;
+  height: 100%;
   width: 100%;
+}
+.header-page .header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.header-page #nav {
+  margin-bottom: -20px;
 }
 
 .home-page {
@@ -54,17 +61,24 @@ body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-  background-color: #cdeeff;
+  width: 100%;
 }
 html .main-view,
 body .main-view {
   height: 100%;
 }
 .header-page {
-  background-image: url(http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg);
-  background-size: cover;
-  height: 300px;
+  height: 100%;
   width: 100%;
+}
+.header-page .header {
+  display: table;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.header-page #nav {
+  margin-bottom: -20px;
 }
 .home-page {
   position: relative;
