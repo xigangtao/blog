@@ -6,9 +6,44 @@
 		height: 100%;
 		width: 100%;
 		position: relative;
+	
+		.header-content{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color:#f1f1f1;
+			background:rgba(0, 0, 0, 0.48);
+			
+			.btn-more{
+				background:rgba(0, 0, 0, 0.48);
+				min-width : 100px;
+				color : #fff;
+				
+				&:hover{
+					background:rgba(0, 0, 0, 0.8);
+				}
+			}
+		}
 	}
 	#nav {
 		margin-bottom:-20px;
+		.navbar-default{
+			border : 0;
+			border-radius : 0;
+			background:rgba(0, 0, 0, 0.58);
+			
+			a {
+				color : #ccc;
+				
+				&:hover {
+					color : #fff;
+				}
+				
+				&.active{
+					color : #fff;
+				}
+			}
+		}
 	}
 }
 

@@ -1,32 +1,33 @@
 <div ng-controller="HeaderCtrl" class="header-page">
 	<div class="header">
+		<div class="header-content">
+			<h2>Welcome to my family</h2>
+			<a class="btn btn-more" ng-click="toNav()">
+				<i class="glyphicon glyphicon-menu-down"></i>
+			</a>
+		</div>
 	</div>
-	<!-- /Header Area -->
+	<!-- /Header bar -->
 	<div id="nav" scroll-to-fixed>
 		<!-- Navigation -->
-		<nav class="navbar navbar-new" role="navigation">
+		<nav class="navbar navbar-default" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse"
-						data-target="#mobilemenu">
-						<span class="sr-only">Toggle navigation</span> <span
-							class="icon-bar"></span> <span class="icon-bar"></span> <span
-							class="icon-bar"></span>
-					</button>
-					<a href="#" class="navbar-brand">Slidefolio</a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-bar">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				      </button>
+					<a href="#" class="navbar-brand">My family</a>
 				</div>
-				<div class="collapse navbar-collapse" id="mobilemenu">
-
+				<div class="collapse navbar-collapse" id="mobile-bar">
 					<ul class="nav navbar-nav navbar-right text-center">
-						<li><a href="#top"><i class="service-icon fa fa-home"></i>&nbsp;Home</a></li>
-						<li><a href="#about"><i class="service-icon fa fa-info"></i>&nbsp;About</a></li>
-						<li><a href="#services"><i
-								class="service-icon fa fa-laptop"></i>&nbsp;Services</a></li>
-						<li><a href="#portfolio"><i
-								class="service-icon fa fa-camera"></i>&nbsp;Portfolio</a></li>
-						<li><a href="#contact"><i
-								class="service-icon fa fa-envelope"></i>&nbsp;Contact</a></li>
+						<li><a href="#top">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#signin">Sign in</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->

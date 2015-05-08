@@ -5,9 +5,10 @@ body {
   height: 100%;
   width: 100%;
 }
-html .main-view,
-body .main-view {
+html #main-view,
+body #main-view {
   height: 100%;
+  margin-top: 50px;
 }
 
 .header-page {
@@ -20,8 +21,37 @@ body .main-view {
   width: 100%;
   position: relative;
 }
+.header-page .header .header-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.48);
+}
+.header-page .header .header-content .btn-more {
+  background: rgba(0, 0, 0, 0.48);
+  min-width: 100px;
+  color: #fff;
+}
+.header-page .header .header-content .btn-more:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 .header-page #nav {
   margin-bottom: -20px;
+}
+.header-page #nav .navbar-default {
+  border: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.58);
+}
+.header-page #nav .navbar-default a {
+  color: #ccc;
+}
+.header-page #nav .navbar-default a:hover {
+  color: #fff;
+}
+.header-page #nav .navbar-default a.active {
+  color: #fff;
 }
 
 .home-page {
@@ -63,9 +93,10 @@ body {
   height: 100%;
   width: 100%;
 }
-html .main-view,
-body .main-view {
+html #main-view,
+body #main-view {
   height: 100%;
+  margin-top: 50px;
 }
 .header-page {
   height: 100%;
@@ -77,8 +108,37 @@ body .main-view {
   width: 100%;
   position: relative;
 }
+.header-page .header .header-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.48);
+}
+.header-page .header .header-content .btn-more {
+  background: rgba(0, 0, 0, 0.48);
+  min-width: 100px;
+  color: #fff;
+}
+.header-page .header .header-content .btn-more:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
 .header-page #nav {
   margin-bottom: -20px;
+}
+.header-page #nav .navbar-default {
+  border: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.58);
+}
+.header-page #nav .navbar-default a {
+  color: #ccc;
+}
+.header-page #nav .navbar-default a:hover {
+  color: #fff;
+}
+.header-page #nav .navbar-default a.active {
+  color: #fff;
 }
 .home-page {
   position: relative;
