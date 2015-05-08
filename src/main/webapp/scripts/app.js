@@ -31,7 +31,7 @@ app.run(['$rootScope','$http',function($rootScope,$http){
 				fade : 2000
 			}
 	    ],
-	    overlay: "bower_components/vegas/dist/overlays/09.png"
+	    overlay: "styles/images/09.png"
 	});
 	
 }]);

@@ -2,5 +2,20 @@
 	<div class="panel-heading">
 		<span ng-bind="title"></span>
 	</div>
-	<div class="panel-body" ng-transclude></div>
+	<div class="panel-body">
+		<div ng-transclude>
+		</div>
+		<div class="text-center load-more">
+			<a class="btn btn-load">
+				<i class="glyphicon glyphicon-menu-down"></i>
+			</a>
+		</div>
+	</div>
+	<div class="panel-footer text-center">
+		<ul class="list-inline">
+			<li><i class="fa fa-thumbs-o-up"></i>(0)</li>
+			<li><i class="fa fa-thumbs-o-down"></i>(0)</li>
+			<li><i class="fa fa-comment-o"></i>(0)</li>
+		</ul>
+	</div>
 </div>

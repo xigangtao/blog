@@ -80,6 +80,14 @@ module.exports = function(grunt) {
 					dest : blog.dist
 				}, {
 					expand : true,
+					src : [ blog.path + 'img/**' ],
+					dest : blog.dist
+				}, {
+					expand : true,
+					src : [ blog.path + 'styles/images/**' ],
+					dest : blog.dist
+				}, {
+					expand : true,
 					src : [ blog.path + 'views/**' ],
 					dest : blog.dist
 				}, {
@@ -98,7 +106,7 @@ module.exports = function(grunt) {
 					expand : true,
 					cwd : blog.path + 'bower_components/bootstrap/dist',
 					src : 'fonts/*',
-					dest : blog.dist + '/styles'
+					dest : blog.dist
 				} ]
 			}
 		},
@@ -209,7 +217,7 @@ module.exports = function(grunt) {
 	});
 	grunt.registerTask('serve', [ 'connect:server', 'watch' ]);
 	grunt.registerTask('default', [ 'watch' ]);
-	grunt.registerTask('build', [ 'clean', 'less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ]);
+	grunt.registerTask('build', ['less', 'wiredep', 'useminPrepare','concat', 'copy', 'cssmin', 'uglify', 'usemin', 'htmlmin' ]);
 	grunt.registerTask('link', [ 'wiredep']);
 	grunt.registerTask('test', [ 'karma' ]);
 };
