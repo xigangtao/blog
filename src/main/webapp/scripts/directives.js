@@ -4,7 +4,8 @@ app.directive('myCard',function(){
 		transclude : true,
 		templateUrl: 'views/directives/my-card.html',
 		scope : {
-			title : '='
+			card : '=',
+			loadMore : '&'
 		},
 		link : function(scope,elem,attr){
 			

@@ -1,21 +1,23 @@
 <div class="panel panel-default my-card">
 	<div class="panel-heading">
-		<span ng-bind="title"></span>
+		<span ng-bind="card.date"></span>
 	</div>
 	<div class="panel-body">
-		<div ng-transclude>
+		<div class="col-xs-6 col-md-3" ng-repeat="img in card.imgs">
+			<a href="#" class="thumbnail"><img ng-src="{{img.url}}" alt="">
+			</a>
 		</div>
 		<div class="text-center load-more">
-			<a class="btn btn-load">
-				<i class="glyphicon glyphicon-menu-down"></i>
+			<a class="btn btn-load" ng-click="loadMore()">
+				<i class="glyphicon glyphicon-menu-down" title="load more..."></i>
 			</a>
 		</div>
 	</div>
 	<div class="panel-footer text-center">
 		<ul class="list-inline">
-			<li><i class="fa fa-thumbs-o-up"></i>(0)</li>
-			<li><i class="fa fa-thumbs-o-down"></i>(0)</li>
-			<li><i class="fa fa-comment-o"></i>(0)</li>
+			<li><i class="fa fa-thumbs-o-up" title="Up"></i>(0)</li>
+			<li><i class="fa fa-thumbs-o-down" title="Down"></i>(0)</li>
+			<li><i class="fa fa-comment-o" title="Comment"></i>(0)</li>
 		</ul>
 	</div>
 </div>
