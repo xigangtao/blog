@@ -20,9 +20,12 @@
 <body ng-app="blogApp">
 	<ng-include src="'views/header.html'"></ng-include>
 	<div id="main"></div>
-	<div id="main-view" class="container">
-		<div ui-view></div>
-	</div>
+	<div ui-view class="container main-view">
+	<div ng-include src="'views/footer.html'"></div>
+	
+	<!-- template -->
+	<div ng-include src="'views/templates/imgbox.html'"></div>
+	
 	<!-- build:js(.) scripts/vendor.js -->
 	<!-- bower:js -->
 	<script src="bower_components/jquery/dist/jquery.js"></script>
@@ -47,11 +50,15 @@
 	<!-- build:js scripts/blog-controllers.js -->
 	<script src="scripts/controllers/home.js"></script>
 	<script src="scripts/controllers/header.js"></script>
+	<script src="scripts/controllers/imgbox.js"></script>
 	<!-- endbuild -->
 	
 	<!-- build:js scripts/blog-directives.js -->
 	<script src="scripts/directives.js"></script>
 	<!-- endbuild -->
 	
+	<!-- build:js scripts/blog-services.js -->
+	<script src="scripts/services/modalService.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

@@ -5,7 +5,8 @@ app.directive('myCard',function(){
 		templateUrl: 'views/directives/my-card.html',
 		scope : {
 			card : '=',
-			loadMore : '&'
+			loadMore : '&',
+			openImg : '&'
 		},
 		link : function(scope,elem,attr){
 			

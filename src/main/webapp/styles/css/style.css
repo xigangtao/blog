@@ -5,13 +5,15 @@
 }
 .my-card .panel-heading {
   color: #fff;
+  font-weight: bold;
+  font-size: large;
   border: 0;
   border-bottom: 1px solid #ccc;
   background: rgba(0, 0, 0, 0);
 }
 .my-card .panel-body {
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .my-card .panel-body .load-more {
   margin: -15px 0px;
@@ -29,6 +31,9 @@
 .my-card .panel-footer ul {
   margin-bottom: 5px;
 }
+.my-card .panel-footer .badge:hover {
+  background-color: #aaa;
+}
 
 html,
 body {
@@ -38,10 +43,14 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-html #main-view,
-body #main-view {
-  height: 100%;
+html .main-view,
+body .main-view {
   margin-top: 50px;
+}
+html .footer-page,
+body .footer-page {
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
 }
 
 .header-page {
@@ -58,16 +67,19 @@ body #main-view {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: #f1f1f1;
+  color: #fff;
   background: rgba(0, 0, 0, 0);
 }
+.header-page .header .header-content h2 {
+  text-shadow: 5px 5px 5px #000;
+}
 .header-page .header .header-content .btn-more {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   min-width: 100px;
   color: #fff;
 }
 .header-page .header .header-content .btn-more:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 .header-page #nav {
   margin-bottom: -20px;
@@ -75,16 +87,16 @@ body #main-view {
 .header-page #nav .navbar-default {
   border: 0;
   border-radius: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 .header-page #nav .navbar-default a {
-  color: #ccc;
+  color: #fff;
 }
 .header-page #nav .navbar-default a:hover {
-  color: #fff;
+  color: #ccc;
 }
 .header-page #nav .navbar-default a.active {
-  color: #fff;
+  color: #ccc;
 }
 
 
@@ -96,10 +108,14 @@ body {
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-html #main-view,
-body #main-view {
-  height: 100%;
+html .main-view,
+body .main-view {
   margin-top: 50px;
+}
+html .footer-page,
+body .footer-page {
+  color: #fff;
+  text-shadow: 5px 5px 5px #000;
 }
 .header-page {
   height: 100%;
@@ -115,16 +131,19 @@ body #main-view {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-  color: #f1f1f1;
+  color: #fff;
   background: rgba(0, 0, 0, 0);
 }
+.header-page .header .header-content h2 {
+  text-shadow: 5px 5px 5px #000;
+}
 .header-page .header .header-content .btn-more {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   min-width: 100px;
   color: #fff;
 }
 .header-page .header .header-content .btn-more:hover {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
 }
 .header-page #nav {
   margin-bottom: -20px;
@@ -132,16 +151,16 @@ body #main-view {
 .header-page #nav .navbar-default {
   border: 0;
   border-radius: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
 }
 .header-page #nav .navbar-default a {
-  color: #ccc;
+  color: #fff;
 }
 .header-page #nav .navbar-default a:hover {
-  color: #fff;
+  color: #ccc;
 }
 .header-page #nav .navbar-default a.active {
-  color: #fff;
+  color: #ccc;
 }
 .my-card {
   color: #fff;
@@ -150,13 +169,15 @@ body #main-view {
 }
 .my-card .panel-heading {
   color: #fff;
+  font-weight: bold;
+  font-size: large;
   border: 0;
   border-bottom: 1px solid #ccc;
   background: rgba(0, 0, 0, 0);
 }
 .my-card .panel-body {
   border-radius: 3px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
 }
 .my-card .panel-body .load-more {
   margin: -15px 0px;
@@ -173,4 +194,7 @@ body #main-view {
 }
 .my-card .panel-footer ul {
   margin-bottom: 5px;
+}
+.my-card .panel-footer .badge:hover {
+  background-color: #aaa;
 }

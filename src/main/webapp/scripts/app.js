@@ -6,28 +6,22 @@ app.run(['$rootScope','$http',function($rootScope,$http){
 	    transitionDuration: 2000,
 	    slides: [
 	        {
-				src : './img/nature1.jpg',
+				src : './img/y002.JPG',
 				fade : 2000
 			}, {
-				src : './img/bw1.jpg',
+				src : './img/y005.JPG',
 				fade : 2000
 			}, {
-				src : './img/portrait1.jpg',
+				src : './img/y008.JPG',
 				fade : 2000
 			}, {
-				src : './img/portrait5.jpg',
+				src : './img/y010.JPG',
 				fade : 2000
 			}, {
-				src : './img/portrait2.jpg',
+				src : './img/y019.JPG',
 				fade : 2000
 			}, {
-				src : './img/portrait3.jpg',
-				fade : 2000
-			}, {
-				src : './img/portrait4.jpg',
-				fade : 2000
-			}, {
-				src : './img/forest.jpg',
+				src : './img/y041.JPG',
 				fade : 2000
 			}
 	    ],
