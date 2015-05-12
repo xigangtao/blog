@@ -20,11 +20,12 @@
 <body ng-app="blogApp">
 	<ng-include src="'views/header.html'"></ng-include>
 	<div id="main"></div>
-	<div ui-view class="container main-view">
-	<div ng-include src="'views/footer.html'"></div>
+	<div class="container main-view" ui-view></div>
+	<ng-include src="'views/footer.html'"></ng-include>
+	
 	
 	<!-- template -->
-	<div ng-include src="'views/templates/imgbox.html'"></div>
+	<div ng-include="'views/templates/imgbox.html'"></div>
 	
 	<!-- build:js(.) scripts/vendor.js -->
 	<!-- bower:js -->
@@ -36,7 +37,7 @@
 	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
 	<script src="bower_components/angular-cookies/angular-cookies.js"></script>
 	<script src="bower_components/angular-messages/angular-messages.js"></script>
-	<script src="bower_components/vegas/dist/vegas.min.js"></script>
+	<script src="bower_components/vegas/dist/vegas.js"></script>
 	<script src="bower_components/ScrollToFixed/jquery-scrolltofixed.js"></script>
 	<script src="bower_components/angular-scrolltofixed/dist/angular-scrolltofixed.js"></script>
 	<!-- endbower -->
