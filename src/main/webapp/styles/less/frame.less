@@ -3,13 +3,97 @@ html,body{
 	padding:0px; 
 	height: 100%;
   	width: 100%;
-  	background:rgba(0, 0, 0, 0.3);
-	.main-view{
-		margin-top : 50px;
+	background:#aaa;
+	
+	.header {
+		display: table;
+		height: 100%;
+		width: 100%;
+		position: relative;
+	
+		.header-content{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			color:#fff;
+			background:rgba(0, 0, 0, 0);
+			
+			h2{
+				text-shadow: 5px 5px 5px #000;
+			}
+			
+			.btn-more{
+				background:rgba(0, 0, 0, 0.8);
+				min-width : 100px;
+				color : #fff;
+				
+				&:hover{
+					background:rgba(0, 0, 0, 0.5);
+				}
+			}
+		}
+	}
+	
+	#main {
+		border : 1px solid rgba(0, 0, 0, 0.7);
+	}
+	
+	#nav {
+		margin-bottom:-20px;
+		.navbar-default{
+			border : 0;
+			border-radius : 0;
+			background:rgba(0, 0, 0, 0.7);
+			
+			a {
+				color : #fff;
+				
+				&:hover {
+					color : #ccc;
+				}
+				
+				&.active{
+					color : #ccc;
+				}
+			}
+		}
 	}
 	
 	.footer-page{
 		color : #fff;
-		text-shadow: 5px 5px 5px #000;
+		text-shadow: 1px 1px 1px #000;
+	}
+	
+	@media (max-width: 767px) {
+		.footer-page{
+			color : #fff;
+			text-shadow: 1px 1px 1px #000;
+			
+			h2{
+				font-size : 1em;
+			}
+			
+			em{
+				font-size : .6em;
+			}
+		}
+	}
+	
+	.back-ground{
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		bottom: 0;
+  		right: 0;
+		margin: 0;
+  		padding: 0;
+  		background: center center no-repeat;
+  		background-image: url(../../img/y002.JPG); 
+  		background-color: rgba(0, 0, 0, 0.298039); 
+  		background-size: cover; 
+  		background-position: 50% 50%;
+  		overflow: hidden;
+  		border: none;
 	}
 }
+

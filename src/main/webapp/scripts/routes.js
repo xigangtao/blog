@@ -12,10 +12,10 @@ angular.module('blogApp').config(['$stateProvider','$urlRouterProvider',function
 	      templateUrl: 'views/home.html',
 	      controller: 'HomeCtrl'
 	    })
-	    .state('declare', {
-	      url: '/declare',
-	      templateUrl: 'views/declare.html',
-	      controller: 'DeclareCtrl'
+	    .state('about', {
+	      url: '/about',
+	      templateUrl: 'views/about.html',
+	      controller: 'AboutCtrl'
 	    })
 	    .state('base', {
 	      url: '/base',

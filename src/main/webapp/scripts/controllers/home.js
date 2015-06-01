@@ -5,12 +5,18 @@ app.controller('HomeCtrl',['$scope','ModalService',function($scope, modalService
 		type : 1,
 		date : '2015-02-05',
 		imgs : [{
-			url : 'img/IMG_20131214_201218.jpg'
+			index : 0,
+			url : 'img/IMG_20131214_201218.jpg',
+			desc : 'img/IMG_20131214_201218.jpg'
 		},{
-			url : 'img/IMG_20131227_212010.jpg'
+			index : 2,
+			url : 'img/IMG_20131227_212010.jpg',
+			desc : 'img/IMG_20131227_212010.jpg'
 		},{
+			index : 3,
 			url : 'img/IMG_20140124_195602.jpg'
 		},{
+			index : 4,
 			url : 'img/IMG_20140208_200346.jpg'
 		}]
 	},{
@@ -36,10 +42,12 @@ app.controller('HomeCtrl',['$scope','ModalService',function($scope, modalService
 	}];
 	$scope.load = function(id){
 		alert(id)
-	}
+	};
 	
-	$scope.openImgbox = function(){
-		modalService.openImgbox();
-	}
+	$scope.openImg = function(card,index){
+		modalService.openImgbox(
+			card.imgs[index]
+		);
+	};
 }]);
 

@@ -1,14 +1,19 @@
 app.factory('ModalService', ['$modal', function ($modal) {
-	
+	function createModel(item) {
+        return {
+          model : function () {
+            return item ? item : null;
+          }
+        };
+      }
 	return {
-		openImgbox : function(url){
+		openImgbox : function(model){
 			 return $modal.open({
                  templateUrl: 'imgbox-template',
                  controller: 'ImgboxCtrl',
-                 resolve: function(){
-                	 return url;
-                 },
-                 size : 'lg'
+                 resolve: createModel(model)
+//                 ,
+//                 size : 'lg'
              });
 		}
 	}
