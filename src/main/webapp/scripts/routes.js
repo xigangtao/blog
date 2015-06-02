@@ -17,35 +17,15 @@ angular.module('blogApp').config(['$stateProvider','$urlRouterProvider',function
 	      templateUrl: 'views/about.html',
 	      controller: 'AboutCtrl'
 	    })
-	    .state('base', {
-	      url: '/base',
-	      templateUrl: 'views/base.html',
-	      controller: 'BaseCtrl'
+	    .state('contact', {
+	      url: '/contact',
+	      templateUrl: 'views/contact.html',
+	      controller: 'ContactCtrl'
 	    })
-	    .state('controller', {
-	      url: '/controller',
-	      templateUrl: 'views/controller.html',
-	      controller: 'ControllerCtrl'
-	    })
-	    .state('serviceApi', {
-	      url: '/serviceApi',
-	      templateUrl: 'views/serviceApi.html',
-	      controller: 'ServiceApiCtrl'
-	    })
-	    .state('serviceCustom', {
-	      url: '/serviceCustom',
-	      templateUrl: 'views/serviceCustom.html',
-	      controller: 'ServiceCustomCtrl'
-	    })
-	    .state('directive', {
-	      url: '/directive',
-	      templateUrl: 'views/directive.html',
-	      controller: 'DirectiveCtrl'
-	    })
-	    .state('others', {
-	      url: '/others',
-	      templateUrl: 'views/others.html',
-	      controller: 'OthersCtrl'
+	    .state('sign', {
+	      url: '/sign',
+	      templateUrl: 'views/sign.html',
+	      controller: 'SignCtrl'
 	    })
 	    .state('404', {
 	      url: '/404',

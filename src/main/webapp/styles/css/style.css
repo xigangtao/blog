@@ -35,6 +35,7 @@
     border: 1px solid #777;
     border-radius: 2px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
   }
   .about-page .timeline li .timeline-item:before {
     content: " ";
@@ -79,6 +80,10 @@
     border-right-width: 14px;
     border-left-width: 0;
   }
+}
+.timeline-item {
+  color: #fff;
+  min-height: 100px;
 }
 @media (max-width: 767px) {
   .about-page .timeline {
@@ -141,6 +146,13 @@
     border-right-width: 14px;
     border-left-width: 0;
   }
+}
+
+.contact-page .form-panel,
+.sign-page .form-panel {
+  margin-top: 20px;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -243,48 +255,6 @@ body .back-ground {
   background-position: 50% 50%;
   overflow: hidden;
   border: none;
-}
-
-.header {
-  display: table;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.header .header-content {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  color: #fff;
-  background: rgba(0, 0, 0, 0);
-}
-.header .header-content h2 {
-  text-shadow: 5px 5px 5px #000;
-}
-.header .header-content .btn-more {
-  background: rgba(0, 0, 0, 0.8);
-  min-width: 100px;
-  color: #fff;
-}
-.header .header-content .btn-more:hover {
-  background: rgba(0, 0, 0, 0.5);
-}
-#nav {
-  margin-bottom: -20px;
-}
-#nav .navbar-default {
-  border: 0;
-  border-radius: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
-#nav .navbar-default a {
-  color: #fff;
-}
-#nav .navbar-default a:hover {
-  color: #ccc;
-}
-#nav .navbar-default a.active {
-  color: #ccc;
 }
 
 .home-page .my-card {
@@ -509,6 +479,7 @@ body .back-ground {
     border: 1px solid #777;
     border-radius: 2px;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+    font-size: 1.5em;
   }
   .about-page .timeline li .timeline-item:before {
     content: " ";
@@ -553,6 +524,10 @@ body .back-ground {
     border-right-width: 14px;
     border-left-width: 0;
   }
+}
+.timeline-item {
+  color: #fff;
+  min-height: 100px;
 }
 @media (max-width: 767px) {
   .about-page .timeline {
@@ -616,16 +591,9 @@ body .back-ground {
     border-left-width: 0;
   }
 }
-
-.modal-content {
-  border: 0;
-}
-.img-box-template .panel-heading {
-  height: 41px;
-}
-.img-box-template .panel-body {
-  padding: 5px;
-}
-.img-box-template .panel-body .imgbox img {
-  display: block;
+.contact-page .form-panel,
+.sign-page .form-panel {
+  margin-top: 20px;
+  padding: 20px 10px;
+  background: rgba(0, 0, 0, 0.1);
 }
