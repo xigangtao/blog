@@ -152,7 +152,7 @@
 .sign-page .form-panel {
   margin-top: 20px;
   padding: 20px 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
 }
 
 
@@ -221,6 +221,7 @@ body #nav .navbar-default a.active {
 }
 html .footer-page,
 body .footer-page {
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
@@ -365,6 +366,7 @@ body #nav .navbar-default a.active {
 }
 html .footer-page,
 body .footer-page {
+  background: rgba(0, 0, 0, 0.5);
   color: #fff;
   text-shadow: 1px 1px 1px #000;
 }
@@ -595,5 +597,5 @@ body .back-ground {
 .sign-page .form-panel {
   margin-top: 20px;
   padding: 20px 10px;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
 }
