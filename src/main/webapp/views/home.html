@@ -1,43 +1,33 @@
-<div class="home-page">
-	<div class="panel panel-default my-card" ng-repeat="item in items">
-		<div class="panel-heading">
-			<i class="fa fa-camera" ng-if="item.type==1"></i> <i
-				class="fa fa-video-camera" ng-if="item.type==2"></i> &nbsp; <span
-				ng-bind="item.date"></span>
-		</div>
-		<div class="panel-body">
-			<div ng-if="item.type===1">
-				<div class="col-xs-6 col-md-3" ng-repeat="img in item.imgs">
-					<a href="#" class="thumbnail" ng-click="openImg(item,$index)"><img
-						ng-src="{{img.url}}" alt=""></a>
-				</div>
-				<div class="text-center load-more">
-					<a class="btn btn-load" ng-click="loadMore(item)"> <i
-						class="glyphicon glyphicon-menu-down" title="load more..."></i>
-					</a>
-				</div>
-			</div>
-			<video ng-if="item.type===2" width="100%" controls="controls"
-				ng-repeat="img in item.imgs">
-				<source ng-src="{{img.url}}" type="video/mp4">
-			</video>
-		</div>
-		<div class="panel-footer text-center">
-			<form ng-show="!openEdit">
-				<div class="form-group">
-				  <textarea class="form-control" rows="3"></textarea>
-				</div>
-				<div class="form-group text-center">
-				  <button class="btn"><i class="fa fa-check"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;
-				  <button class="btn" ng-click="openEdit=!openEdit"><i class="fa fa-reply"></i></button>
-				</div>
-			</form>
-			<ul class="list-inline" ng-show="openEdit" ng-init="openEdit=true">
-				<li><span class="badge fa fa-thumbs-o-up">14</span></li>
-				<li><span class="badge fa fa-thumbs-o-down">14</span></li>
-				<li><span class="badge fa fa-comment-o" title="Comment" ng-click="openEdit=!openEdit">0</span></li>
-			</ul>
-		</div>
-	</div>
+<div class="home-page row">
+	 <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
+	  <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
+	  <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
+	  <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
+	  <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
+	  <div class="col-xs-12 col-md-3">
+	    <a href="#" class="thumbnail">
+	      <img src="img/y005.JPG" alt="...">
+	    </a>
+	  </div>
 </div>
 

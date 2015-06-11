@@ -12,6 +12,11 @@ angular.module('blogApp').config(['$stateProvider','$urlRouterProvider',function
 	      templateUrl: 'views/home.html',
 	      controller: 'HomeCtrl'
 	    })
+	    .state('details', {
+	      url: '/details',
+	      templateUrl: 'views/details.html',
+	      controller: 'DetailsCtrl'
+	    })
 	    .state('about', {
 	      url: '/about',
 	      templateUrl: 'views/about.html',

@@ -155,6 +155,53 @@
   background: rgba(0, 0, 0, 0);
 }
 
+.details-page {
+  padding: 20px 0;
+}
+.details-page .list .bar {
+  color: #fff;
+  border-bottom: 2px solid #999;
+  padding-left: 15px;
+  text-shadow: 2px 2px 2px #000;
+}
+.details-page .list .bar a {
+  color: #777;
+}
+.details-page .list .bar a:hover {
+  color: #eee;
+}
+.details-page .list .item {
+  margin: 15px 0;
+}
+.details-page .list .item .item-box {
+  margin: -10px;
+  overflow: hidden;
+  max-height: 170px;
+  position: relative;
+}
+.details-page .list .item .item-box .img-responsive {
+  z-index: 11;
+}
+.details-page .list .item .item-box .overlay {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 111;
+}
+.details-page .list .item .item-box .overlay .fa-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+.details-page .list .item .item-box.active .overlay {
+  display: block;
+}
+
 
 html,
 body {
@@ -258,47 +305,8 @@ body .back-ground {
   border: none;
 }
 
-.home-page .my-card {
-  color: #fff;
-  background: rgba(0, 0, 0, 0);
-  border: 0;
-}
-.home-page .my-card .panel-heading {
-  color: #fff;
-  font-weight: bold;
-  font-size: large;
-  text-shadow: 2px 2px 2px #000;
-  border: 0;
-  border-bottom: 2px solid #555;
-  background: rgba(0, 0, 0, 0);
-}
-.home-page .my-card .panel-body {
-  margin: 1px 0 0 0;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 35px 0 20px 0;
-}
-.home-page .my-card .panel-body .load-more {
-  margin: -15px 0px;
-}
-.home-page .my-card .panel-body .load-more .btn-load {
-  color: #ccc;
-}
-.home-page .my-card .panel-body .load-more .btn-load:hover {
-  color: #fff;
-}
-.home-page .my-card .panel-footer {
-  padding: 3px 10px;
-  background: rgba(255, 255, 255, 0.8);
-}
-.home-page .my-card .panel-footer ul {
-  margin-bottom: 5px;
-}
-.home-page .my-card .panel-footer .has-success .form-control {
-  border-color: #ccc;
-}
-.home-page .my-card .panel-footer .badge:hover {
-  background-color: #aaa;
+.home-page {
+  padding: 20px 0;
 }
 
 html,
@@ -402,47 +410,8 @@ body .back-ground {
   overflow: hidden;
   border: none;
 }
-.home-page .my-card {
-  color: #fff;
-  background: rgba(0, 0, 0, 0);
-  border: 0;
-}
-.home-page .my-card .panel-heading {
-  color: #fff;
-  font-weight: bold;
-  font-size: large;
-  text-shadow: 2px 2px 2px #000;
-  border: 0;
-  border-bottom: 2px solid #555;
-  background: rgba(0, 0, 0, 0);
-}
-.home-page .my-card .panel-body {
-  margin: 1px 0 0 0;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 35px 0 20px 0;
-}
-.home-page .my-card .panel-body .load-more {
-  margin: -15px 0px;
-}
-.home-page .my-card .panel-body .load-more .btn-load {
-  color: #ccc;
-}
-.home-page .my-card .panel-body .load-more .btn-load:hover {
-  color: #fff;
-}
-.home-page .my-card .panel-footer {
-  padding: 3px 10px;
-  background: rgba(255, 255, 255, 0.8);
-}
-.home-page .my-card .panel-footer ul {
-  margin-bottom: 5px;
-}
-.home-page .my-card .panel-footer .has-success .form-control {
-  border-color: #ccc;
-}
-.home-page .my-card .panel-footer .badge:hover {
-  background-color: #aaa;
+.home-page {
+  padding: 20px 0;
 }
 @media (min-width: 768px) {
   .about-page .timeline {
@@ -598,4 +567,50 @@ body .back-ground {
   margin-top: 20px;
   padding: 20px 10px;
   background: rgba(0, 0, 0, 0);
+}
+.details-page {
+  padding: 20px 0;
+}
+.details-page .list .bar {
+  color: #fff;
+  border-bottom: 2px solid #999;
+  padding-left: 15px;
+  text-shadow: 2px 2px 2px #000;
+}
+.details-page .list .bar a {
+  color: #777;
+}
+.details-page .list .bar a:hover {
+  color: #eee;
+}
+.details-page .list .item {
+  margin: 15px 0;
+}
+.details-page .list .item .item-box {
+  margin: -10px;
+  overflow: hidden;
+  max-height: 170px;
+  position: relative;
+}
+.details-page .list .item .item-box .img-responsive {
+  z-index: 11;
+}
+.details-page .list .item .item-box .overlay {
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 111;
+}
+.details-page .list .item .item-box .overlay .fa-search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+}
+.details-page .list .item .item-box.active .overlay {
+  display: block;
 }
